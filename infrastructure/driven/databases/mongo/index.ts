@@ -1,6 +1,5 @@
 import mongoose from "mongoose";
-mongoose;
-mongoose.connect("");
+mongoose.connect(process.env.DB_URL || "");
 const Schema = mongoose.Schema;
 const setSchma = new Schema(
   {
